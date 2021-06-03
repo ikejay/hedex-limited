@@ -1,0 +1,16 @@
+.navbar {
+    display: flex;
+    flex-direction: row;
+    background: white;
+    color: rgb(68, 63, 63);
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+.navbar a {
+    color: #2b2525;
+}
