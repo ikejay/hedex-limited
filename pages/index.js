@@ -54,6 +54,18 @@ export default function Home() {
           <Activity key={item.key} heading={item.heading} info={item.info} color={item.color} />
         ))}
       </div>
+      <div class="h-screen bg-gray-300">
+        <div class="flex flex-row w-full bg-yellow-100">
+          <div>
+            <h3>fjakldlkamf</h3>
+            <p>dlkf;laldm;aldmf;a dmf;a mafld;a fmla;e fmla; d</p>
+          </div>
+          <div>
+            <h3>JDFIOADIOAIDD</h3>
+            <p>jdsifoa dioai a dnaofi a odifnao afiodain a idao ao dao ao d uoei90p aidoi ikdkd</p>
+          </div>
+        </div>
+      </div>
     </div>
   )
 }
