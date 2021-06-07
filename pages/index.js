@@ -34,22 +34,22 @@ export default function Home() {
     hover: { rotate: 360, transition: { ease: "circular", duration: 2, repeat: Infinity } }
   };
 
-  const activities = [{ key: 1, heading: "Architectural Work", info: "odasijgdoaid bdian oaidnoa oian do oaid avo ia doai avoi oakdjhaiodhjogaid ooaidvhnoa oaidnaodinvoa ovaidoiadk oabdoa dolndoainoa dahinodianvidoafhdklkalddmkmalkdnaodlikvndklakdndvolakdnvaldk dvlkd alv dl adlv ald, l adl al  dkdlkivhoiaHDOVIHDIVAODIVAIODIVIAODINVAODINVIAO", color: "gray" },
-  { key: 2, heading: "Architectural Work", info: "dahinodianvidoaivhoiaHDOVIHDIVAODIVAIODIVIAODINVAODINVIAO", color: "blue" },
-  { key: 3, heading: "Architectural Work", info: "dahinodianvidoaivhoiaHDOVIHDIVAODIVAIODIVIAODINVAODINVIAO", color: "gray" }]
+  const activities = [{ key: 1, heading: "Architectural Work", info: "dfkamfk;p,mlkmlkmlkmlkmlkmkllkjhkjhbkjhgkjgkkoimlslb", color: "gray" },
+  { key: 2, heading: "Architectural Work", info: "mallam", color: "blue" },
+  { key: 3, heading: "Architectural Work", info: "O", color: "gray" }]
 
   return (
-    <div class="flex-row">
-      {/* <div class="flex h-screen bg-mBackground bg-cover w-screen relative">
-          <div style={{ display: "block" }}>
-            <div style={{ fontSize: "2vw" }}>
+    <div class="md:block">
+      <div class="flex h-96 md:h-screen bg-mBackground bg-cover lg:bg-cover md:bg-cover 2xl:w-full items-center justify-center">
+          <div class="block items-center justify-center">
+            <div class="sm:text-2xl sm:align-middle lg:text-6xl md:text-4xl items-center text-center">
               <AnimatedTitle currentInView={inView} type={'h3'}>
                 {text}
               </AnimatedTitle>
             </div>
         </div>
-      </div> */}
-      <div class="md:h-52 block md:flex">
+      </div>
+      <div class="md:flex md:flex-row">
         {activities.map((item) => (
           <Activity key={item.key} heading={item.heading} info={item.info} color={item.color} />
         ))}
