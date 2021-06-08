@@ -4,6 +4,7 @@ import { AnimatedTitle } from "../components/animatedtitles";
 import "../components/activity"
 import Activity from '../components/activity'
 import 'tailwindcss/tailwind.css'
+import Duties from '../components/duties';
 
 
 
@@ -41,12 +42,12 @@ export default function Home() {
   return (
     <div class="md:block">
       <div class="flex h-96 md:h-screen bg-mBackground bg-cover lg:bg-cover md:bg-cover 2xl:w-full items-center justify-center">
-          <div class="block items-center justify-center">
-            <div class="sm:text-2xl sm:align-middle lg:text-6xl md:text-4xl items-center text-center">
-              <AnimatedTitle currentInView={inView} type={'h3'}>
-                {text}
-              </AnimatedTitle>
-            </div>
+        <div class="block items-center justify-center">
+          <div class="sm:text-2xl sm:align-middle lg:text-6xl md:text-4xl items-center text-center">
+            <AnimatedTitle currentInView={inView} type={'h3'}>
+              {text}
+            </AnimatedTitle>
+          </div>
         </div>
       </div>
       <div class="md:flex md:flex-row">
@@ -54,15 +55,27 @@ export default function Home() {
           <Activity key={item.key} heading={item.heading} info={item.info} color={item.color} />
         ))}
       </div>
-      <div class="h-screen bg-gray-300">
-        <div class="flex flex-row w-full bg-yellow-100">
-          <div>
+      <div class="h-auto bg-gray-300">
+        <div class="h-96 flex flex-row bg-yellow-100">
+          <div class="w-1/2 h-full">
             <h3>fjakldlkamf</h3>
             <p>dlkf;laldm;aldmf;a dmf;a mafld;a fmla;e fmla; d</p>
           </div>
-          <div>
+          <div class="bg-green-100 w-1/2 h-full">
             <h3>JDFIOADIOAIDD</h3>
             <p>jdsifoa dioai a dnaofi a odifnao afiodain a idao ao dao ao d uoei90p aidoi ikdkd</p>
+          </div>
+        </div>
+        <div class="bg-red-200 justify-center flex w-full">
+          <div class="flex flex-row flex-wrap w-3/5 bg-yellow-300">
+            <Duties />
+            <Duties />
+            <Duties />
+            <Duties />
+            <Duties />
+            <Duties />
+            <Duties />
+            <Duties />
           </div>
         </div>
       </div>
