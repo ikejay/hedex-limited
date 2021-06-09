@@ -5,6 +5,11 @@ import "../components/activity"
 import Activity from '../components/activity'
 import 'tailwindcss/tailwind.css'
 import Duties from '../components/duties';
+import Button from '@material-ui/core/Button';
+
+
+import { FaPenAlt, FaPencilAlt, FaDraftingCompass, FaRuler, FaPencilRuler, FaVectorSquare } from 'react-icons/fa'
+import { FcPlanner } from 'react-icons/fc'
 
 
 
@@ -56,26 +61,47 @@ export default function Home() {
         ))}
       </div>
       <div class="h-auto bg-gray-300">
-        <div class="h-96 flex flex-row bg-yellow-100">
-          <div class="w-1/2 h-full">
-            <h3>fjakldlkamf</h3>
-            <p>dlkf;laldm;aldmf;a dmf;a mafld;a fmla;e fmla; d</p>
+        <div class="h-full flex flex-row flex-wrap items-center justify-center bg-yellow-100">
+          <div class="flex bg-red-500 md:w-4/5 w-full lg:w-1/2 h-full justify-center ">
+            <div class="w-72 py-12">
+              <div>
+                <h3 class=" font-bold text-4xl text-left">10+ YEARS OF EXPERIENCE</h3>
+              </div>
+              <hr class="w-2/3" style={{ height: "6px", border: "none", borderTop: "3px solid white" }} />
+              <p class>
+                Zombie ipsum reversus ab viral inferno,
+                Summus brains sit​​, morbo vel maleficia?
+                undead survivor dictum mauris. Hi mindless mortuis soulless creaturas
+                , imo evil stalking monstra adventus resi dentevil vultus comedat
+              </p>
+            </div>
           </div>
-          <div class="bg-green-100 w-1/2 h-full">
-            <h3>JDFIOADIOAIDD</h3>
-            <p>jdsifoa dioai a dnaofi a odifnao afiodain a idao ao dao ao d uoei90p aidoi ikdkd</p>
+          <div class="flex bg-green-100 w-1/2 h-full justify-center">
+            <div class="w-3/5 self-center ">
+              <p>
+                Lorem Ipsum proin gravida nibh vel velit auctor
+                aliquet. Aenean sollicitudin, lorem quis bibendum auctor,
+                nisi elit consequat ipsum, nec sagittis sem nibh id elit.
+                Duis sed odio sit amet nvvvibh vulputate cursus a sit amet mauris.
+                Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor
+                a ornare odio. Sed non mauris vitae erat consequat. Class aptent taciti
+                sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                Mauris in erat justo. Nullam ac urna eu felis dapibus elit set condimentum
+                sit amet a auguecondimentum fermentum nunc.
+              </p>
+              <Button variant="contained" color="gray">Read more</Button>
+            </div>
           </div>
         </div>
-        <div class="bg-red-200 justify-center flex w-full">
-          <div class="flex flex-row flex-wrap w-3/5 bg-yellow-300">
-            <Duties />
-            <Duties />
-            <Duties />
-            <Duties />
-            <Duties />
-            <Duties />
-            <Duties />
-            <Duties />
+        <div class="bg-red-200 justify-center flex w-full p-20">
+          <div class="flex flex-row flex-wrap w-3/5 bg-white">
+            <Duties component={<FaDraftingCompass size={120} color="gray" />} />
+            <Duties component={<FaPencilRuler size={120} color="gray" />} />
+            <Duties component={<FaVectorSquare size={120} color="gray" />} />
+            <Duties component={<FaVectorSquare size={120} color="gray" />} />
+            <Duties component={<FaVectorSquare size={120} color="gray" />} />
+            <Duties component={<FaVectorSquare size={120} color="gray" />} />
+            <input type="button" name="load_more" title="See more" />
           </div>
         </div>
       </div>

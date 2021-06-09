@@ -8,7 +8,7 @@ const Layout = ({ children }) => {
     return (
 
         <div class="md:w-full xl:w-full lg:w-full 2xl:w-full md:flex-wrap">
-            <div class="md:w-full hidden md:flex h-12 bg-gray-600 2xl:w-full xl:w-full md:content-center md:items-center md:justify-center md:space-x-20">
+            <div class="md:w-full hidden md:flex h-12 bg-gray-400 2xl:w-full xl:w-full md:content-center md:items-center md:justify-center md:space-x-20">
                 <div class="flex font-medium">
                     <GoLocation size={20} color="white" />
                     <p class="pl-3">East Legon</p>

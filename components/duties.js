@@ -1,10 +1,12 @@
 import React from 'react';
-import {} from 'react-icons/fa'
+import {FaPenAlt, FaPencilAlt} from 'react-icons/fa'
 
-const Duties = () => {
+const Duties = (props) => {
     return ( 
-        <div class="border-solid border border-gray-500 m-2" style={{width: "31.90%", height: "25rem"}}>
-            <h3>name</h3>
+        <div class="border-solid border border-gray-500 items-center" style={{width: "31.3333%", margin: "1%", height: "23rem"}}>
+            <div class="flex justify-center">
+                {props.component}
+            </div>
             <p>something</p>
         </div>
      );
