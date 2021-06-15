@@ -93,8 +93,8 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div class="bg-red-200 justify-center flex w-full p-20">
-          <div class="flex flex-row flex-wrap w-3/5 bg-white">
+        <div class="bg-red-200 justify-center items-center flex w-full sm:p-5 lg:p-28">
+          <div class="flex flex-row flex-wrap w-full bg-white">
             <Duties component={<FaDraftingCompass size={120} color="gray" />} />
             <Duties component={<FaPencilRuler size={120} color="gray" />} />
             <Duties component={<FaVectorSquare size={120} color="gray" />} />
